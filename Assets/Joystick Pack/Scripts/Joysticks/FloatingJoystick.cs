@@ -1,10 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class FloatingJoystick : Joystick
 {
+    //[SerializeField] private Button _fire;
+
+    //private bool _isFifeButtonUp = false;
+
+    //private void Awake()
+    //{
+    //    _fire.onClick.AddListener(GetButtonUpFire);
+    //    _fire.OnPointerUp += ;
+    //}
+
+    //private void GetButtonUpFire()
+    //{
+
+    //}
+
     protected override void Start()
     {
         base.Start();

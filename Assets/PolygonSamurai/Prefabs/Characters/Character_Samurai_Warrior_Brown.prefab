@@ -1389,6 +1389,8 @@ GameObject:
   m_Component:
   - component: {fileID: 443972}
   - component: {fileID: 313480400978333706}
+  - component: {fileID: 412556868259522621}
+  - component: {fileID: 8741019743009441313}
   m_Layer: 0
   m_Name: Character_Samurai_Warrior_Brown
   m_TagString: Untagged
@@ -1439,6 +1441,41 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.94, z: 0}
+--- !u!95 &412556868259522621
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 2ba66718d3169ae42a05d8facf302228, type: 3}
+  m_Controller: {fileID: 9100000, guid: d7b901a1a6e063e41aaf17f97809a1ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8741019743009441313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b4024fa63c4039b3ed513573f9f84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animator: {fileID: 412556868259522621}
+  CharacterController: {fileID: 313480400978333706}
 --- !u!1 &155650
 GameObject:
   m_ObjectHideFlags: 0

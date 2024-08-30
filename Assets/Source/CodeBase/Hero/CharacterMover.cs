@@ -5,7 +5,7 @@ namespace Assets.Source.CodeBase
     public class CharacterMover : MonoBehaviour
     {
         [SerializeField] private CharacterController _controller;
-        [SerializeField][Range(0.1f, 100f)] private float _speed;
+        [SerializeField][Range(0.1f, 5f)] private float _speed;
 
         private IInputHandler _input;
         private Camera _camera;

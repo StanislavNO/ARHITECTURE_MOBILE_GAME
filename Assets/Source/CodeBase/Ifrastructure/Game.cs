@@ -4,7 +4,7 @@ namespace Assets.Source.CodeBase
 {
     public class Game
     {
-        private IInputHandler _input;
+        public static IInputHandler InputService { get; private set; }
 
         public Game()
         {
@@ -14,9 +14,9 @@ namespace Assets.Source.CodeBase
         private void RegisterInput()
         {
             if (Application.isEditor)
-                _input = new StandaloneInputHandler();
+                InputService = new StandaloneInputHandler();
             else
-                _input = new MobileInputHandler();
+                InputService = new MobileInputHandler();
         }
     }
 }

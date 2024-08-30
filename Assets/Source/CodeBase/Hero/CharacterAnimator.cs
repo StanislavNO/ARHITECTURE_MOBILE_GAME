@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Source.CodeBase
 {
-    public class HeroAnimator : MonoBehaviour, IAnimationStateReader
+    public class CharacterAnimator : MonoBehaviour, IAnimationStateReader
     {
         private static readonly int MoveHash = Animator.StringToHash("Walking");
         private static readonly int AttackHash = Animator.StringToHash("AttackNormal");

@@ -20,6 +20,7 @@ namespace Assets.Source.CodeBase
         private void Start()
         {
             _camera = Camera.main;
+            _camera.GetComponent<CameraFollower>().SetTarget(transform);
         }
 
         private void Update()
